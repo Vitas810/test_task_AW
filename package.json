@@ -1,0 +1,23 @@
+{
+  "name": "test_task_aw",
+  "version": "1.0.0",
+  "description": "Тестовое задание",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitas810/test_task_AW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vitas810/test_task_AW/issues"
+  },
+  "homepage": "https://github.com/Vitas810/test_task_AW#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}
