@@ -8,9 +8,14 @@
       href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
       rel="stylesheet"
     />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./style/normalize.css" />
     <link rel="stylesheet" href="./style/style.css" />
@@ -241,10 +246,134 @@
         </div>
       </section>
       <section class="more">
-        <div class="container">
-          <h2 class="section-title">More of our work</h2>
+        <h2 class="section-title">More of our work</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide-image">
+                <img src="./img/more-slider/lada.jpg" alt="Image" />
+              </div>
+
+              <h3 class="more-title">Lada Niva 2121</h3>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-image">
+                <img
+                  src="./img/more-slider/1549823159_mercedes-w222-green-61.jpg"
+                  alt="Image"
+                />
+              </div>
+
+              <h3 class="more-title">Mercedes-Benz S560 W222</h3>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-image">
+                <img
+                  src="./img/more-slider/volkswagen-vw-golf-low-tuning-70011.jpg"
+                  alt="Image"
+                />
+              </div>
+
+              <h3 class="more-title">Volkswagen Golf 2</h3>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-image">
+                <img
+                  src="./img/more-slider/BMW_E30_Stance_Low_440819_1920x12001.jpg"
+                  alt="Image"
+                />
+              </div>
+
+              <h3 class="more-title">BMW E30</h3>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
       </section>
+
+      <section class="contacts">
+        <div class="contacts-left">
+          <div class="container">
+            <h2 class="contacts-title">Contacts</h2>
+            <div class="contacts-items">
+              <div class="contacts-item">
+                <h4 class="contacts-item__title">Address</h4>
+                <div class="contacts-item__text">
+                  123557 Moscow,<br />
+                  Presnensky district, Bolshaya Gruzinskaya str., 17 st1
+                </div>
+              </div>
+              <div class="contacts-item">
+                <h4 class="contacts-item__title">Telephone</h4>
+                <div class="contacts-item__text">
+                  <a href="tel:+74951396651">+7 (495) 139 66 51</a>
+                  <a href="tel:+74951438055">+7 (495) 143 80 55</a>
+                </div>
+              </div>
+              <div class="contacts-item">
+                <h4 class="contacts-item__title">E-mail</h4>
+                <div class="contacts-item__text">
+                  <a href="mailto:info_stance@gmail.com"
+                    >info_stance@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="maps">
+          <img
+            src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyALp2h6jiPpqq56lrBpEiKY6TJ2Eh1JyAs&center=55.75891952693745,37.59045935989981&zoom=14&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x121925&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0xd6d7d9&style=element:labels.text.stroke%7Ccolor:0x212121%7Cvisibility:off&style=feature:administrative%7Celement:geometry%7Ccolor:0xffffff&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0xffffff&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi.business%7Cvisibility:off&style=feature:poi.park%7Celement:geometry%7Ccolor:0x121925&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b%7Cvisibility:off&style=feature:road%7Celement:geometry.fill%7Ccolor:0x4e535b&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:road%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.highway%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0xd9d7d9&style=feature:transit%7Cvisibility:off&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x121925&style=feature:water%7Celement:labels.text.fill%7Ccolor:0xffffff&size=640x480"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-items">
+            <div class="footer-item">
+              <div class="footer-item-info">
+                <span>© © STANCE, 2009 - 2020 </span>
+                <p>All rights reserved</p>
+                <p>Privacy policy</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="footer-item-links">
+                <h3 class="social-list-title">Menu</h3>
+                <ul class="footer-menu col2">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Works</a></li>
+                  <li><a href="#">Join</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="social">
+                <h3 class="social-list-title">Social network</h3>
+                <ul class="social-list col3">
+                  <li><a href="#">Facebook </a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">YouTube</a></li>
+                  <li><a href="#">Twitter</a></li>
+                </ul>
+              </div>
+              <div class="web">
+                <img src="./img/web.svg" alt="web" />
+                Website by AlbaWeb
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
