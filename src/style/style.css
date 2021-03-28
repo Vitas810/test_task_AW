@@ -472,6 +472,12 @@ footer {
   }
 }
 @media only screen and (max-width: 992px) {
+  header {
+    height: 600px;
+  }
+  header::before {
+    height: 600px;
+  }
   .container {
     max-width: 760px;
   }
@@ -479,23 +485,33 @@ footer {
     font-size: 58px;
   }
   .section-title {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .advantages {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .advanteges-items {
+    margin-left: 40px;
   }
   .advanteges-item {
     margin-bottom: 40px;
   }
   .facts-image {
-    max-width: 450px;
-    height: 600px;
+    max-width: 350px;
+    height: 400px;
   }
   .facts-about {
     margin-left: 70px;
   }
   .facts-title {
-    margin-top: 160px;
+    margin-top: 90px;
   }
   .facts-text {
     max-width: 400px;
+  }
+  .facts-item {
+    margin-bottom: 80px;
   }
   .facts-about-reverse {
     margin-right: 50px;
@@ -513,70 +529,23 @@ footer {
   .header-info__lang {
     margin-right: 20px;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  .header-top {
-    flex-direction: column;
-    align-items: center;
-  }
-  .header-center__title {
-    font-size: 25px;
-    text-align: center;
-  }
-  .header-center__description::before {
-    margin-left: 40px;
-  }
-  .header-center__text {
-    margin-left: 60px;
-    font-size: 16px;
-    max-width: 300px;
-  }
-  .header-bottom {
-    display: none;
-  }
-  .advantages {
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  .advanteges-items {
-    justify-content: center;
-    margin-left: 0;
-  }
-  .section-title {
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
-  .facts-title {
-    margin-top: 80px;
-  }
-  .facts-item {
-    flex-direction: column;
-    align-items: center;
-  }
-  .facts-image {
-    max-width: 320px;
-    height: 400px;
-    margin-left: 20px;
-  }
-  .facts-about {
-    margin-left: 0;
-  }
-  .facts-text {
-    max-width: 300px;
-  }
-  .facts-item {
-    margin-bottom: 80px;
-  }
-  .section-description {
-    margin-left: 40px;
-  }
-  .technical-title {
-    text-align: center;
-  }
   .technical {
     padding-bottom: 80px;
+  }
+  .more {
+    margin-left: 40px;
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 670px;
+  }
+  .advanteges-items {
+    justify-content: space-between;
+  }
+  .advanteges-item {
+    max-width: 290px;
   }
   .technical-table {
     display: block;
@@ -618,27 +587,83 @@ footer {
   .technical-table tbody tr {
     display: table-cell;
   }
-  .technical-table tbody tr:nth-child(odd) {
-    background: none;
-  }
-  .technical-table tr:nth-child(even) {
-    background: transparent;
-  }
-  .technical-table tr td:nth-child(odd) {
-    background: #f8f8f8;
-    border-right: 1px solid #e6e4e4;
-  }
-  .technical-table tr td:nth-child(even) {
-    border-right: 1px solid #e6e4e4;
-  }
   .technical-table td {
     display: block;
     text-align: center;
   }
-  .more {
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-center__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .header-center__description::before {
     margin-left: 40px;
+  }
+  .header-center__text {
+    margin-left: 60px;
+    font-size: 16px;
+    max-width: 300px;
+  }
+  .header-bottom {
+    display: none;
+  }
+  .advantages {
+    text-align: center;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
+  .advanteges-items {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .advanteges-item {
+    max-width: 100%;
+  }
+  .advanteges-item__title {
+    font-size: 25px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .facts-title {
+    margin-top: 80px;
+  }
+  .facts-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .facts-image {
+    max-width: 320px;
+    height: 400px;
+    margin-left: 20px;
+  }
+  .facts-about {
+    margin-left: 0;
+  }
+  .facts-text {
+    max-width: 300px;
+  }
+  .facts-item {
+    margin-bottom: 80px;
+  }
+  .section-description {
+    margin-left: 40px;
+  }
+  .technical-title {
+    margin-left: 40px;
+  }
+  .technical {
+    padding-bottom: 80px;
+  }
+
   .swiper-slide {
     margin-bottom: 40px;
   }
@@ -647,5 +672,20 @@ footer {
   }
   .maps {
     display: none;
+  }
+  .contacts {
+    padding-left: 40px;
+    background: #121925;
+  }
+  .contacts-left {
+    padding-bottom: 0;
+  }
+  footer {
+    padding-bottom: 40px;
+  }
+  .footer-items {
+    padding-top: 40px;
+    margin-left: 40px;
+    flex-direction: column;
   }
 }
