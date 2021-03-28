@@ -5,7 +5,7 @@
 }
 
 header {
-  height: 920px;
+  height: 100vh;
   background: url('../img/header-bg.jpg') no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@ header::before {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 50px;
+  bottom: 0;
 }
 .container {
   max-width: 1465px;
@@ -125,7 +125,7 @@ header::before {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 130px;
+  bottom: 0px;
   right: 0;
   border: 1px solid var(--white);
   width: 41px;
@@ -315,13 +315,15 @@ header::before {
 }
 .contacts {
   display: flex;
-  justify-content: space-around;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  justify-content: space-between;
   position: relative;
+  padding-left: 232px;
 }
-.contacts-left {
-  z-index: 5;
+.maps {
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .maps::before {
   content: '';
@@ -330,13 +332,27 @@ header::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    89.75deg,
-    #121925 49.53%,
-    rgba(18, 25, 37, 0) 99.83%
-  );
+  background: url('https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyALp2h6jiPpqq56lrBpEiKY6TJ2Eh1JyAs&center=55.75994952693745,37.62045935989981&zoom=13&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x121925&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0xd6d7d9&style=element:labels.text.stroke%7Ccolor:0x212121%7Cvisibility:off&style=feature:administrative%7Celement:geometry%7Ccolor:0xffffff&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0xffffff&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi.business%7Cvisibility:off&style=feature:poi.park%7Celement:geometry%7Ccolor:0x121925&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b%7Cvisibility:off&style=feature:road%7Celement:geometry.fill%7Ccolor:0x4e535b&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:road%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.highway%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0xd9d7d9&style=feature:transit%7Cvisibility:off&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x121925&style=feature:water%7Celement:labels.text.fill%7Ccolor:0xffffff&size=920x891&markers=icon:https://clck.ru/TDDNZ%7C55.75994952693745,37.62045935989981');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 51% 100%;
+}
+.contacts-left {
+  padding-bottom: 200px;
+}
+.contacts-left::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(89.75deg, #121925 49.53%, rgba(18, 25, 37, 0) 99.83%);
 }
 .contacts-title {
+  padding-top: 200px;
+  margin-top: 0;
   font-family: 'Prata';
   font-weight: 400;
   font-size: 64px;
@@ -434,4 +450,202 @@ footer {
 }
 .web img {
   margin-right: 10px;
+}
+@media only screen and (max-width: 1600px) {
+  .container {
+    max-width: 1170px;
+  }
+  .header-center {
+    margin-top: 0;
+  }
+  .header-center__title {
+    font-size: 80px;
+  }
+  .advanteges-item {
+    margin-right: 10px;
+  }
+  .facts-image {
+    max-width: 760px;
+  }
+  .header-bottom {
+    bottom: 130px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .header-center__title {
+    font-size: 58px;
+  }
+  .section-title {
+    font-size: 50px;
+  }
+  .advanteges-item {
+    margin-bottom: 40px;
+  }
+  .facts-image {
+    max-width: 450px;
+    height: 600px;
+  }
+  .facts-about {
+    margin-left: 70px;
+  }
+  .facts-title {
+    margin-top: 160px;
+  }
+  .facts-text {
+    max-width: 400px;
+  }
+  .facts-about-reverse {
+    margin-right: 50px;
+    margin-left: 20px;
+  }
+  .contacts {
+    padding-left: 100px;
+  }
+  .header-menu li {
+    margin-right: 20px;
+  }
+  .header-info__phone {
+    font-size: 14px;
+  }
+  .header-info__lang {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-center__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .header-center__description::before {
+    margin-left: 40px;
+  }
+  .header-center__text {
+    margin-left: 60px;
+    font-size: 16px;
+    max-width: 300px;
+  }
+  .header-bottom {
+    display: none;
+  }
+  .advantages {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .advanteges-items {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .facts-title {
+    margin-top: 80px;
+  }
+  .facts-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .facts-image {
+    max-width: 320px;
+    height: 400px;
+    margin-left: 20px;
+  }
+  .facts-about {
+    margin-left: 0;
+  }
+  .facts-text {
+    max-width: 300px;
+  }
+  .facts-item {
+    margin-bottom: 80px;
+  }
+  .section-description {
+    margin-left: 40px;
+  }
+  .technical-title {
+    text-align: center;
+  }
+  .technical {
+    padding-bottom: 80px;
+  }
+  .technical-table {
+    display: block;
+    min-width: 0;
+  }
+  .technical-table thead,
+  .technical-table tbody,
+  .technical-table thead th {
+    display: block;
+  }
+  .technical-table thead th {
+    padding: 20px;
+    width: 125px;
+  }
+  .technical-table th.tech-headers {
+    padding-left: 20px;
+    width: 125px;
+  }
+  .technical-table td {
+    height: 60px;
+    vertical-align: middle;
+  }
+  .technical-table thead {
+    float: left;
+  }
+  .technical-table tbody {
+    position: relative;
+    overflow-x: auto;
+  }
+  .technical-table td,
+  .technical-table th {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+  }
+  .technical-table thead th {
+    text-align: center;
+  }
+  .technical-table tbody tr {
+    display: table-cell;
+  }
+  .technical-table tbody tr:nth-child(odd) {
+    background: none;
+  }
+  .technical-table tr:nth-child(even) {
+    background: transparent;
+  }
+  .technical-table tr td:nth-child(odd) {
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
+  }
+  .technical-table tr td:nth-child(even) {
+    border-right: 1px solid #e6e4e4;
+  }
+  .technical-table td {
+    display: block;
+    text-align: center;
+  }
+  .more {
+    margin-left: 40px;
+    padding-bottom: 80px;
+  }
+  .swiper-slide {
+    margin-bottom: 40px;
+  }
+  .contacts-title {
+    padding-top: 80px;
+  }
+  .maps {
+    display: none;
+  }
 }
